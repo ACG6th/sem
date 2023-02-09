@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48768743-691b-416e-beeb-d99d979e416b" name="Changes" comment="First commit, adding initial files.">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/napier/sem/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-dockerfile/dockerfile" afterDir="false" />
+    <list default="true" id="48768743-691b-416e-beeb-d99d979e416b" name="Changes" comment="First commit, adding initial files. FINALLY GOT DOCKER WORKING">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +26,9 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -92,11 +92,19 @@
       <option name="project" value="LOCAL" />
       <updated>1675420113283</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First commit, adding initial files. FINALLY GOT DOCKER WORKING">
+      <created>1675971944546</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675971944546</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit, adding initial files." />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit, adding initial files." />
+    <MESSAGE value="First commit, adding initial files. FINALLY GOT DOCKER WORKING" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit, adding initial files. FINALLY GOT DOCKER WORKING" />
   </component>
 </project>
