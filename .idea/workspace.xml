@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48768743-691b-416e-beeb-d99d979e416b" name="Changes" comment="First commit, added workflow badge">
+    <list default="true" id="48768743-691b-416e-beeb-d99d979e416b" name="Changes" comment="First commit, with the containers for maven">
+      <change afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/test_db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/test_db/Dockerfile 2.0" beforeDir="false" afterPath="$PROJECT_DIR$/db/test_db/Dockerfile 2.0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/napier/sem/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/napier/sem/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +32,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="517e63ad2af4ce83c03a7bc1902d39070225a1aa" />
+        <entry key="$PROJECT_DIR$" value="feature/mongo-intergration" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,10 +62,10 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "Docker"
+    "settings.editor.selected.configurable": "configurable.group.editor"
   }
 }]]></component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+  <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.napier.sem.App" />
       <module name="seMethods" />
@@ -74,11 +79,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Docker Image (1)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="mongo:latest" />
+          <option name="containerName" value="mongoserver" />
+          <option name="commandLineOptions" value="--network se-methods" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="mongo:latest" />
+          <option name="containerName" value="" />
+          <option name="commandLineOptions" value="-p 27000:27017" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
           <option name="sourceFilePath" value="Dockerfile" />
         </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
+      <deployment type="docker-image">
+        <settings />
       </deployment>
       <method v="2" />
     </configuration>
@@ -91,8 +122,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Docker.Dockerfile" />
-        <item itemvalue="Application.App" />
-        <item itemvalue="Docker.Dockerfile" />
+        <item itemvalue="Docker.Docker Image (1)" />
+        <item itemvalue="Docker.Docker Image" />
         <item itemvalue="Application.App" />
         <item itemvalue="Docker.Dockerfile" />
       </list>
@@ -149,8 +180,47 @@
       <option name="project" value="LOCAL" />
       <updated>1676579596520</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="First commit, added workflow badge">
+      <created>1676579969026</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676579969026</updated>
+    </task>
+    <task id="LOCAL-00008" summary="First commit, new pom file innit">
+      <created>1676634187291</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676634187291</updated>
+    </task>
+    <task id="LOCAL-00009" summary="First commit, updated app.java with mongo lol">
+      <created>1676634533359</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676634533359</updated>
+    </task>
+    <task id="LOCAL-00010" summary="First commit, with the containers for maven">
+      <created>1676823719685</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1676823719685</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit, adding initial files." />
@@ -158,6 +228,9 @@
     <MESSAGE value="First commit, adding initial files. Added orange cats" />
     <MESSAGE value="First commit, adding initial files. Added link..." />
     <MESSAGE value="First commit, added workflow badge" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit, added workflow badge" />
+    <MESSAGE value="First commit, new pom file innit" />
+    <MESSAGE value="First commit, updated app.java with mongo lol" />
+    <MESSAGE value="First commit, with the containers for maven" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit, with the containers for maven" />
   </component>
 </project>
